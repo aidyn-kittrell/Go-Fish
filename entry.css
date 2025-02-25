@@ -1,0 +1,36 @@
+
+html {
+    background: linear-gradient(to bottom, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: white;
+}
+
+a {
+    display: inline-block;
+    background-color: blue;
+    width: 150px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 18px;
+    text-decoration: none;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
