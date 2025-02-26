@@ -22,7 +22,7 @@ body {
 
 main {
     z-index: 2;
-    background-color: whitesmoke;
+    background-color:  #008000;
     width: 80%;
     height: 80%;
     max-width: 1000px;
@@ -44,9 +44,8 @@ main {
 #fish {
     width: 40px;
     position: absolute;
-    top: 19px;
-    left: 978px;
-    transform: translate(-50%, -50%) scale(1);
+    top: 20vh;
+    left: 10vw;
     opacity: 0;
     animation: fadeIn 0.5s ease-in forwards 0s, wiggle 1s ease-in-out infinite 1s;
 }
@@ -61,4 +60,31 @@ main {
     25% { transform: translate(-50%, -50%) rotate(10deg); }
     50% { transform: translate(-50%, -50%) rotate(-10deg); }
     75% { transform: translate(-50%, -50%) rotate(5deg); }
+}
+
+#players {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#p1 {
+    width: 50%;
+    height: auto;
+    margin: 10px 0 10px 0;
+}
+
+#p2 {
+    width: 50%;
+    height: auto;
+    margin: 10px 0 10px 0;
+}
+
+#hand {
+    position: relative;
+    top: 20%;
+    left: -40%;
+    width: 30%;
 }
