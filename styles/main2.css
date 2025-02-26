@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 html {
     background: linear-gradient(to right, #4facfe, #00f2fe);
     height: 100vh;
     display: flex;
     justify-content: center;
     z-index: 0;
+    font-family: 'Fredoka One', cursive;
 }
 
 body {
@@ -28,28 +31,34 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 70px;
 }
 
-h1 {
-    color: blue;
+#words {
+    position: absolute;
+    top: 35px;
+    left: 860px;
+    width: 190px;
 }
 
-h2 {
-    color: white;
+#fish {
+    width: 40px;
+    position: absolute;
+    top: 19px;
+    left: 978px;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards 0s, wiggle 1s ease-in-out infinite 1s;
 }
 
-a {
-    display: inline-block;
-    background-color: blue;
-    width: 150px;
-    height: 40px;
-    color: white;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 18px;
-    text-decoration: none;
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
-a:hover {
-    transform: scale(1.1);
+@keyframes wiggle {
+    0%, 100% { transform: translate(-50%, -50%) rotate(0deg); }
+    25% { transform: translate(-50%, -50%) rotate(10deg); }
+    50% { transform: translate(-50%, -50%) rotate(-10deg); }
+    75% { transform: translate(-50%, -50%) rotate(5deg); }
 }
