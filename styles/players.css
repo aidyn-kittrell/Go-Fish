@@ -16,15 +16,16 @@ body {
     margin: 0;
     background-repeat: repeat-x;
     width: 100%;
+    height: 100%;
     padding-bottom: 0px;
     background-position: bottom center;
-    background-size: cover;
+    background-size: contain;
 }
 
 #words {
     position: absolute;
-    top: 315px;
-    left: 721px;
+    top: 200px;
+    left: 521px;
     width: 450px;
     height: 108px;
 }
@@ -32,8 +33,8 @@ body {
 #fish {
     width: 90px;
     position: absolute;
-    top: 280px;
-    left: 1000px;
+    top: 165px;
+    left: 800px;
     transform: translate(-50%, -50%) scale(1);
     opacity: 0;
     animation: fadeIn 0.5s ease-in forwards 0s, wiggle 1s ease-in-out infinite 1s;
