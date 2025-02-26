@@ -12,7 +12,7 @@ html {
 body {
     text-align: center;
     z-index: 1;
-    background-image: url("/imgs/waves.gif");
+    background-image: url("../imgs/waves.gif");
     margin: 0;
     background-repeat: repeat-x;
     width: 100%;
