@@ -92,5 +92,26 @@ body {
     position: relative;
     top: 20%;
     left: -40%;
-    width: 30%;
+    width: 50px;
+}
+
+#deck {
+    width: 200px;
+}
+
+#hand-of-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 75px;
+    height: auto;
+    margin: 0 2.5px;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
