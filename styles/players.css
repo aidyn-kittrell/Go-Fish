@@ -22,22 +22,39 @@ body {
     background-size: contain;
 }
 
+#container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#content {
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #words {
-    position: absolute;
-    top: 200px;
-    left: 521px;
-    width: 450px;
-    height: 108px;
+    width: 500px;
+    margin-bottom: 258px;
 }
 
 #fish {
     width: 90px;
-    position: absolute;
-    top: 165px;
-    left: 800px;
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 0;
-    animation: fadeIn 0.5s ease-in forwards 0s, wiggle 1s ease-in-out infinite 1s;
+    margin-left: 120px;
+    animation: ease-in forwards, wiggle 1s ease-in-out infinite;
 }
 
 h2 {
@@ -60,14 +77,9 @@ a:hover {
     transform: scale(1.1);
 }
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
 @keyframes wiggle {
-    0%, 100% { transform: translate(-50%, -50%) rotate(0deg); }
-    25% { transform: translate(-50%, -50%) rotate(10deg); }
-    50% { transform: translate(-50%, -50%) rotate(-10deg); }
-    75% { transform: translate(-50%, -50%) rotate(5deg); }
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    75% { transform: rotate(5deg); }
 }
