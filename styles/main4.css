@@ -82,10 +82,12 @@ body {
     margin: 10px 0 10px 0;
 }
 
-#p2 {
-    width: 50%;
-    height: auto;
-    margin: 10px 0 10px 0;
+#mid-table {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 20px;
 }
 
 #hand {
