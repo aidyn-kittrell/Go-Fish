@@ -82,7 +82,7 @@ a {
     margin-top: 20px;
 }
 
-#button:hover {
+a:hover {
     transform: scale(1.1);
 }
 
