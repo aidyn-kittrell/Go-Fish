@@ -57,6 +57,14 @@ body {
     animation: fadeIn 0.5s ease-in forwards 2.5s, wiggle 1s ease-in-out infinite 3s;
 }
 
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
 #button {
     margin-top: 0px;
 }
