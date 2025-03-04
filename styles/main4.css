@@ -50,6 +50,10 @@ body {
     width: 190px;
 }
 
+#words:hover {
+    transform: scale(1.1);
+}
+
 #fish {
     width: 40px;
     margin-left: 45px;
