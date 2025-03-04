@@ -82,7 +82,6 @@ a:hover {
     animation: fall linear infinite;
 }
 
-/* Add different colors and delays for confetti */
 .confetti:nth-child(2n) {
     background-color: #ffcc00;
     animation-duration: 3s;
@@ -112,7 +111,6 @@ a:hover {
     }
 }
 
-/* Randomize the horizontal position of confetti */
 .confetti:nth-child(1) { left: 10%; }
 .confetti:nth-child(2) { left: 20%; }
 .confetti:nth-child(3) { left: 30%; }
