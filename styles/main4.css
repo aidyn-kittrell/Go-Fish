@@ -79,18 +79,32 @@ body {
 #p1 {
     width: 50%;
     height: auto;
-    margin: 10px 0 10px 0;
+    margin-top: 10px;
+    margin-left: 60px;
 }
 
 #mid-table {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: row;
-    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-#hand {
+#p2 {
+    width: 17%;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 150px;
+}
+
+#p3 {
+    width: 17%;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 50px;
+}
+
+.hand {
     position: relative;
     top: 20%;
     left: -40%;
@@ -99,6 +113,7 @@ body {
 
 #deck {
     width: 200px;
+    margin-right: 100px;
 }
 
 #hand-of-cards {
